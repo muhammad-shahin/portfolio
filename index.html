@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind & Daisy UI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Muhammad Shahin - Web Developer</title>
+  </head>
+  <body class="font-['Ubuntu']"> 
+    <!-- nav bar section -->
+    <header class="bg-accent">
+      <nav class="md:container md:mx-auto">
+        <div class="navbar">
+          <div class="flex-1">
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden text-white">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </label>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-accent text-white rounded-box w-52"
+              >
+              <li><a class=" text-lg hover:text-accent-focus hover:bg-white">About</a></li>
+              <li><a class=" text-lg hover:text-accent-focus hover:bg-white">Contact</a></li>
+              <li><a class=" text-lg hover:text-accent-focus hover:bg-white">Hire Me</a></li>
+              <li><a class=" text-lg hover:text-accent-focus hover:bg-white">GitHub</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost uppercase text-lg md:text-3xl text-white"
+              >Muhammad<span class="text-accent bg-white rounded-md px-3 py-1">Shahin</span></a
+            >
+          </div>
+          <div class=" hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-lg text-white">
+              <li><a class=" hover:text-accent-focus hover:bg-white">About</a></li>
+              <li><a class=" hover:text-accent-focus hover:bg-white">Contact</a></li>
+              <li><a class=" hover:text-accent-focus hover:bg-white">Hire Me</a></li>
+              <li><a class=" hover:text-accent-focus hover:bg-white">GitHub</a></li>
+            </ul>
+          </div>
+          <div class="">
+            <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+              <div class="w-10 rounded-full">
+                <img src="/images/avatar.png" />
+              </div>
+            </label>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="">
+      <!-- Banner Section -->
+      <section>
+        <div class="hero min-h-screen bg-bottom" style="background-image: url('./images/shahin.jpg');">
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="md:container md:mx-auto text-center lg:text-center text-white lg:flex lg:justify-end">
+            <div class="lg:max-w-[50%] ">
+              <h1 class="mb-5 text-7xl font-bold">Muhammad <span class="text-accent">Shahin</span></h1>
+              <p class="mb-5 text-lg">A budding web and mobile app developer. With skills in HTML, CSS, Tailwind, JavaScript, Java, Kotlin, XML, and GitHub, I create captivating interfaces and turn ideas into functional code. Welcome to my portfolio, where creativity and technology come together to shape a brighter digital future.</p>
+              <button class="btn btn-primary"><a href="https://www.linkedin.com/in/shahin-muhammad/">Contact Me</a></button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
