@@ -17,6 +17,43 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Style -->
+    <style>
+      .my-quote{
+        display: block;
+        position: relative;
+        margin: 1rem auto;
+        padding: .5rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+      .my-quote::before{
+        content: '\201c';
+        top: 30%;
+        left: 9%;
+      }
+      .my-quote::after{
+        content: '\201d';
+        top: 30%;
+        right: 9%;
+      }
+      .my-quote::before, .my-quote::after{
+        font-size: 6rem;
+        position: absolute;
+      }
+      @media (max-width: 650px){
+      	.my-quote::before{
+        top: 40%;
+        left: 2%;
+      }
+      .my-quote::after{
+        top: 40%;
+        right: 2%;
+      }
+      .my-quote::before, .my-quote::after{
+        font-size: 4rem;
+      }
+      }
+    </style>
     <title>Muhammad Shahin - Web Developer</title>
   </head>
   <body class="font-['Ubuntu']"> 
@@ -67,7 +104,9 @@
           <div class="">
             <label tabindex="0" class="btn btn-ghost btn-circle avatar">
               <div class="w-10 rounded-full">
-                <img src="/images/avatar.png" />
+                <a href="https://www.linkedin.com/in/shahin-muhammad/"><img src="/images/avatar.png" /></a>
+                
+                
               </div>
             </label>
           </div>
@@ -81,9 +120,12 @@
           <div class="hero-overlay bg-opacity-60"></div>
           <div class="md:container md:mx-auto text-center lg:text-center text-white lg:flex lg:justify-end">
             <div class="lg:max-w-[50%] ">
-              <h1 class="mb-5 text-7xl font-bold">Muhammad <span class="text-accent">Shahin</span></h1>
-              <p class="mb-5 text-lg">A budding web and mobile app developer. With skills in HTML, CSS, Tailwind, JavaScript, Java, Kotlin, XML, and GitHub, I create captivating interfaces and turn ideas into functional code. Welcome to my portfolio, where creativity and technology come together to shape a brighter digital future.</p>
-              <button class="btn btn-primary"><a href="https://www.linkedin.com/in/shahin-muhammad/">Contact Me</a></button>
+              <h1 class="mb-5 text-4xl md:text-7xl font-bold">Muhammad <span class="text-accent">Shahin</span></h1>
+              <blockquote class="my-quote text-xl md:text-4xl">
+                <span class="font-['Ubuntu'] text-error">Being A <span class="text-accent">Better Version</span> of Myself</span>
+              </blockquote>
+              <p class="mb-5 text-lg text-yellow-50">A budding web and mobile app developer. With skills in HTML, CSS, Tailwind, JavaScript, Java, Kotlin, XML, and GitHub, I create captivating interfaces and turn ideas into functional code. Welcome to my portfolio, where creativity and technology come together to shape a brighter digital future.</p>
+              <button class="btn bg-accent border-none text-yellow-50"><a href="https://www.linkedin.com/in/shahin-muhammad/">Contact Me</a></button>
             </div>
           </div>
         </div>
