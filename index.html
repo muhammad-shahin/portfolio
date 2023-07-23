@@ -40,6 +40,67 @@
         font-size: 6rem;
         position: absolute;
       }
+      /* skills section left-img */
+      .left-img{
+        background-image: url('./images/shahin_cxb.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 70vh;
+        width: 28vw;
+        border-radius: 20px;
+      }
+      /* skills section right side style */
+      .wrapper{
+        display: flex;
+      }
+      .wrapper .first-text{
+        font-size: 60px;
+      }
+      .wrapper .sec-text{
+        height: 90px;
+        line-height: 90px;
+        overflow: hidden;
+      }
+      .sec-text li{
+        font-size: 60px;
+        padding: 0 20px;
+        text-shadow: 0 0 1px #0a8377;
+        position: relative;
+        top: 0;
+        animation: slide 16s steps(4) infinite, colorful 6s infinite;
+      }
+      @keyframes slide{
+        100%{
+          top: -360px;
+        }
+      }
+      @keyframes colorful{
+        100%{
+          filter: hue-rotate(360deg);
+        }
+      }
+      .sec-text li span{
+        position: relative;
+
+      }
+      .sec-text li span::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 90px;
+        background: white;
+        border-left: 2px solid #1DCDBC;
+        animation: typing 2s steps(13) infinite alternate;
+      }
+      @keyframes typing{
+        100% {
+          left: 100%;
+          margin: 0 -35px 0 35px;
+        }
+      }
+
       @media (max-width: 650px){
       	.my-quote::before{
         top: 40%;
@@ -114,7 +175,7 @@
     <main class="">
       <!-- Banner Section -->
       <section>
-        <div class="hero min-h-screen bg-bottom" style="background-image: url('./images/shahin.jpg');">
+        <div class="hero h-[93vh] bg-bottom" style="background-image: url('./images/shahin.jpg');">
           <div class="hero-overlay bg-opacity-60"></div>
           <div class="md:container md:mx-auto text-center lg:text-center text-white lg:flex lg:justify-end">
             <div class="lg:max-w-[50%] ">
@@ -125,6 +186,28 @@
               <p class="mb-5 text-lg text-yellow-50">A budding web and mobile app developer. With skills in HTML, CSS, Tailwind, JavaScript, Java, Kotlin, XML, and GitHub, I create captivating interfaces and turn ideas into functional code. Welcome to my portfolio, where creativity and technology come together to shape a brighter digital future.</p>
               <button class="btn bg-accent border-none text-yellow-50"><a href="https://www.linkedin.com/in/shahin-muhammad/">Contact Me</a></button>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section class="md:container md:mx-auto my-10">
+        <h1 class="text-6xl text-center">Skills I Know</h1>
+        <div class="flex flex-col lg:flex-row justify-between items-start mt-10">
+          <!-- Left Side Content -->
+          <div class="">
+            <div class="left-img">
+            </div>
+          </div>
+          <!-- Right Side Content -->
+          <div class="wrapper">
+            <span class="first-text">I'm a</span>
+            <ul class="sec-text text-accent">
+              <li><span>Web Developer</span></li>
+              <li><span>App Developer</span></li>
+              <li><span>Freelancer</span></li>
+              <li><span>Thinker</span></li>
+            </ul>
           </div>
         </div>
       </section>
